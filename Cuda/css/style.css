@@ -1,0 +1,527 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a, p, q, h1, h2, h3, h4, h5, h6, span {
+    font-family: Titillium Web, sans-serif;
+}
+
+h2 {
+    padding: 120px 0 20px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.line {
+    margin: 0 auto;
+    border: 0;
+    width: 88px;
+    height: 4px;
+    background: #14a58c;
+}
+
+.description {
+    margin-top: 26px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.row {
+    width: 1170px;
+    height: 100%;
+    margin: 80px auto 0;
+}
+
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #878787;
+}
+
+/*Home section*/
+#home {
+    height: 600px;
+    background: #89509c;
+    text-align: center;
+}
+
+#home .container {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: 60px;
+}
+
+header {
+    overflow: hidden;
+}
+
+#home #logo {
+    float: left;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li .active {
+    background-color: #643a79;
+}
+
+#home h3 {
+    margin-top: 142px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+#home_button {
+    display: inline-block;
+    margin-top: 60px;
+    border-radius: 5px;
+    border-bottom: 4px solid #c86a40;
+    padding: 30px 80px;
+    background-color: #eb7d4b;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*About section*/
+#about #services {
+    height: 746px;
+    padding-bottom: 126px;
+    background: #17c2a4;
+    text-align: center;
+}
+
+#about #services .row figure {
+    float: left;
+    width: 25%;
+}
+
+#about #services .row figure figcaption {
+    padding-top: 60px;
+    color: #fff;
+}
+
+#about #services .row figure figcaption h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#about #services .row figure figcaption p {
+    width: 65%;
+    margin: 26px auto 0;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
+#about #team {
+    height: 915px;
+    background: #e7f1f8;
+    text-align: center;
+}
+
+#about #team h2 {
+    color: #3c4761;
+}
+
+#about #team .line {
+    background: #c8d9e5;
+}
+
+#about #team .description {
+    color: #3c4761;
+}
+
+#about #team .row figure {
+    float: left;
+    width: 25%;
+}
+
+#about #team .row figure figcaption h4 {
+    margin-top: 38px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #27283d;
+}
+
+#about #team .row figure figcaption span {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #30bae7;
+}
+
+#about #team .row figure figcaption p {
+    width: 68%;
+    margin: 30px auto;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #3c4761;
+}
+
+#about #team .row figure figcaption div .fa {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #bdd1df;
+    line-height: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#about #skills {
+    padding-bottom: 123px;
+    height: 650px;
+    text-align: center;
+}
+
+#about #skills h2 {
+    color: #3e4761;
+}
+
+#about #skills .line {
+    background: #c8d9e5;
+}
+
+#about #skills .description {
+    color: #3c4761;
+}
+
+#about #skills .row figure {
+    float: left;
+    width: 25%;
+}
+
+#about #skills .row figure figcaption h3 {
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #3c4761;
+}
+
+/*Work section*/
+#work {
+    height: 1420px;
+    padding-bottom: 110px;
+    background: #ffdd99;
+    text-align: center;
+}
+
+#work h2 {
+    color: #393939;
+}
+
+#work .line {
+    background: #e1c17a;
+}
+
+#work .description {
+    color: #393939;
+}
+
+#work div #portfolio_nav {
+    margin-top: 40px;
+}
+
+#work div #portfolio_nav {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0;
+}
+
+#work div #portfolio_nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#work div #portfolio_nav li a {
+    display: block;
+    width: 104px;
+    height: 44px;
+    padding: 13px 28px;
+    border-radius: 5px;
+    background: #ebc985;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #393939;
+    text-decoration: none;
+}
+
+#work div #portfolio_nav li a:hover, #work div #portfolio_nav li .active {
+    background-color: #fff;
+}
+
+#work div #portfolio_list {
+    display: inline-block;
+    margin-top: 63px;
+    width: 1102px;
+    list-style: none;
+    font-size: 0;
+}
+
+#work div #portfolio_list li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+#work div #portfolio_list li img {
+    margin-right: 20px;
+}
+
+#work div #portfolio_list li p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #393939;
+}
+
+#work div #portfolio_button {
+    display: block;
+    margin: 82px auto 0;
+    border-radius: 5px;
+    border-bottom: 4px solid #14a58c;
+    width: 300px;
+    padding: 28px 60px;
+    background: #17c2a4;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Blog section*/
+#blog {
+    height: 895px;
+    padding-bottom: 130px;
+    background: #d74680;
+    text-align: center;
+}
+
+#blog .line {
+    background: #ae3d6d;
+}
+
+#blog .row > div {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    float: left;
+    width: 50%;
+    margin-bottom: 150px;
+}
+
+#blog .row div .circle {
+    float: left;
+    width: 96px;
+    height: 96px;
+}
+
+#blog .row div .right_side {
+    margin-left: 50px;
+    float: left;
+    width: 60%;
+}
+
+#blog .row div .right_side q {
+    display: block;
+    font-size: 21px;
+    line-height: 31px;
+    font-style: italic;
+    text-align: left;
+    color: #fff;
+}
+
+#blog .row div .right_side h5 {
+    margin-top: 12px;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#blog .row div .right_side span {
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    color: #ffdd99;
+}
+
+/*Contact section*/
+#contact {
+    padding-bottom: 100px;
+    background: #3c5499;
+    text-align: center;
+}
+
+#contact .line {
+    background: #2f3d72;
+}
+
+#contact form {
+    margin: 50px 100px 0;
+}
+
+#contact form #name {
+    float: left;
+    width: 50%;
+}
+
+#contact form #name input {
+    width: 90%;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #273a71;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+}
+
+#contact form #name input::placeholder {
+    color: #fff;
+}
+
+#contact form #email {
+    float: right;
+    width: 50%;
+}
+
+#contact form #email input {
+    width: 90%;
+    height: 50px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #273a71;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+}
+
+#contact form #email input::placeholder {
+    color: #fff;
+}
+
+#contact form #message input {
+    margin-top: 25px;
+    width: 95%;
+    height: 200px;
+    padding: 12px;
+    background: #273a71;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+#contact form #message input::placeholder {
+    color: #fff;
+}
+
+#contact form #contact_button {
+    display: block;
+    margin: 82px auto 0;
+    border-radius: 5px;
+    border-bottom: 4px solid #449dc5;
+    width: 300px;
+    padding: 28px 60px;
+    background: #50b9e8;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    padding: 45px 0;
+    text-align: center;
+    background: #3b4d8f;
+}
+
+footer ul {
+    margin: 0 auto;
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li a:hover {
+    color: #4fb7e6;
+}
