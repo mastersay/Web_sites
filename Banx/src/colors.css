@@ -1,0 +1,21 @@
+.purple {
+    color: #4f4d6a;
+}
+
+.bg-purple {
+    background: #4f4d6a;
+    --background-purple: #4f4d6a;
+}
+
+.red {
+    color: #ff0000;
+    opacity: 0.1;
+}
+
+.light-grey {
+    color: #efefef;
+}
+
+.bg-dark-grey {
+    background: #505050;
+}

@@ -1,0 +1,42 @@
+.navbar {
+    /*justify-content: center;*/
+}
+
+/*purple color*/
+.navbar * {
+    color: #4f4d6a;
+}
+
+.navbar-brand {
+    height: 1%;
+    font-family: Georgia, sans-serif;
+    font-size: 2.25em;
+    line-height: 1.139;
+    transform: scale(0.884, 0.884);
+}
+
+.navbar-nav {
+    height: 0.4%;
+    font-family: PTSans, sans-serif;
+    font-size: 0.75em;
+    line-height: 1.5;
+}
+
+.offcanvas-body {
+    height: auto !important;
+    overflow-y: hidden;
+}
+.offcanvas {
+    /*height: auto !important;*/
+    overflow:hidden;
+}
+/*.offcanvas-body * {*/
+/*    overflow-y: hidden !important;*/
+/*}*/
+
+.offcanvas.show {
+    overflow:hidden;
+    background: #efefef;
+    min-height: 187px !important;
+    /*max-height: 200px;*/
+}

@@ -1,0 +1,111 @@
+body {
+    background-color: #ececec !important;
+}
+
+.see-btn, .meet-btn {
+    max-width: 210px !important;
+    font-family: Georgia, sans-serif;
+    font-size: 1.13em !important;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.32) !important;
+    white-space: nowrap;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.13);
+}
+
+.see-btn {
+    background-image: linear-gradient(0deg, #4f4d6a 0%, #6e6c8a 100%);
+}
+
+.meet-btn {
+    background-image: linear-gradient(0deg, #9c8394 0%, #d0c2ca 100%);
+}
+
+#Area1 {
+    height: 100vw;
+    max-height: 1135px;
+    min-height: 650px;
+    background: center/cover url("../images/Design_Area1_background.png") no-repeat;
+}
+
+#Area1_heading #we_are {
+    font-family: Georgia, sans-serif;
+    font-size: 1.37em;
+}
+
+#Area1_heading h1 {
+    font-family: Georgia, sans-serif;
+    font-size: 4.5em;
+}
+
+#Area1_heading #a_creative {
+    font-family: OpenSans, sans-serif;
+    font-size: 1em;
+}
+
+#area2 * {
+    font-family: Georgia, sans-serif;
+}
+
+#area2-heading h2 {
+    font-size: 2em;
+}
+
+#Area3 * {
+    font-family: Georgia, sans-serif;
+}
+
+#Area3 h4 {
+    font-size: 1.5em;
+    line-height: 1.125;
+}
+
+#Area3 p {
+    font-size: 0.75em;
+    line-height: 2;
+}
+
+#Area3 .view_more-btn {
+    font-size: 0.75em;
+    border: none;
+}
+
+@media only screen and (min-width: 576px) {
+    #we_are {
+        font-size: 1.5em;
+    }
+
+    #Area1_heading h1 {
+        font-size: 5.81em;
+    }
+
+    #Area1 #a_creative {
+        font-size: 1.13em;
+    }
+
+    #area2-heading h2 {
+        font-size: 2.81em;
+    }
+
+    #Area3 p {
+        max-width: 19.03vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #Area1_heading h1 {
+        font-size: 7.81em;
+    }
+
+    #area2-heading h2 {
+        font-size: 4.5em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #area2-footer h4 {
+        font-size: 2em;
+    }
+
+    #first img {
+        height: calc(33.33% - 1rem);
+    }
+}

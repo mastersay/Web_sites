@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="../navbar_style.css">
+<link rel="stylesheet" href="../fonts.css">
+<!--<div class="container-fluid">-->
+<!--    <nav class="navbar navbar-expand-md ">-->
+<!--        <a href="../Design/" class="navbar-brand fst-italic col col-lg-6">banx</a>-->
+<!--        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"-->
+<!--                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span></button>-->
+<!--            <ul class="navbar-nav nav-fill col fw-bold text-uppercase collapse navbar-collapse pe-lg-5" id="navbarCollapse">-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="../Design/" class="nav-link">Design</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="../Web_design/" class="nav-link">Web design</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="../Graphic_design/" class="nav-link">Graphic Design</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="../Print_design/" class="nav-link">Print design</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="../Video_design/" class="nav-link">Video Design</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--    </nav>-->
+<!--</div>-->
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-md ">
+        <a href="../Design/" class="navbar-brand col col-lg-6 fst-italic">banx</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation"
+                onfocus="this.blur()">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="offcanvas offcanvas-top col-9 col-lg-10 col-lg-6" tabindex="-1" id="offcanvasNavbar">
+            <!--            <div class="offcanvas-header">-->
+            <!--                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>-->
+            <!--            </div>-->
+            <div class="offcanvas-body justify-content-md-end justify-content-lg-start" id="navbar-ul-wrap">
+                <ul class="navbar-nav nav-fill h-auto pe-lg-5 text-uppercase fw-bold" id="navbar-ul">
+                    <li class="nav-item">
+                        <a href="../Design/" class="nav-link">Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Web_design/" class="nav-link">Web design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Graphic_design/" class="nav-link">Graphic Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Print_design/" class="nav-link">Print design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Video_design/" class="nav-link">Video Design</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--Observer for dynamic height changing-->
+<script async>
+    const observer = new ResizeObserver(entries => {
+        for (let entry of entries) {
+            let height = getComputedStyle(document.getElementById("navbar-ul")).height;
+            document.getElementById("navbar-ul-wrap").setAttribute("style", 'max-height: calc(' + height + ' + 1rem) !important')
+            document.getElementsByClassName("offcanvas")[0].setAttribute("style", 'max-height: calc(' + height + ' + 1rem) !important')
+            // $(document.getElementById("navbar-ul-wrap")).height(height + " !important")
+        }
+    })
+    observer.observe(document.getElementById("navbar-ul"));
+</script>
+
+<!--Navigation item highlighter-->
+<script defer>
+    navItems = document.getElementsByClassName("nav-link");
+    path = window.location.href;
+    for (let nav_link of navItems) {
+        if (path.includes(nav_link.href)) {
+            nav_link.classList.add("active");
+            nav_link.setAttribute("aria-current", "page");
+        }
+    }
+</script>

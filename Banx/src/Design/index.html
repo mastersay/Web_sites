@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design</title>
+    <!--    jQuery-->
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+    <!--    css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../colors.css">
+    <link rel="stylesheet" href="../fonts.css">
+    <!--    Bootstrap css-->
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+</head>
+<body class="purple">
+
+<section id="Area1">
+    <!--Navbar-->
+    <div class="container mb-3 mb-md-5 pt-2 pt-md-3 " id="nav-placeholder"></div>
+    <script>
+        $("#nav-placeholder").load("../navbar.html")
+    </script>
+
+    <!--Heading text-->
+    <div class="d-flex flex-column align-items-center mt-5 pt-md-4 text-center" id="Area1_heading">
+        <div class="container mb-5">
+            <p class="text-uppercase fst-italic" id="we_are">We are</p>
+            <h1 class="text-uppercase fw-bold">Studio banx</h1>
+            <p class="text-uppercase fw-bold" id="a_creative">A creative web & print digital agency built on method and
+                creative juices</p>
+        </div>
+        <!--Buttons-->
+        <div class="row w-50 justify-content-center gap-3 px-lg-5">
+            <a href="#Area2" class="col btn see-btn rounded-5 mx-lg-1 fst-italic text-white">See our work</a>
+            <a href="#footer-placeholder" class="col btn meet-btn rounded-5 mx-lg-1 fst-italic text-white">meet the
+                team</a>
+        </div>
+    </div>
+</section>
+
+<section class="d-flex flex-column py-5" id="Area2">
+    <div class="container d-flex flex-column w-75 align-items-center">
+        <div class="text-center" id="Area2_heading">
+            <p class="text-uppercase fst-italic">Check out</p>
+            <h2 class="text-uppercase fw-bold">our worx</h2>
+        </div>
+        <div class="row gap-xl-3 mx-2 mx-lg-5 ">
+            <figure class="figure col-12 col-sm-6 col-xl d-flex flex-column p-0">
+                <img class="figure-img img-fluid align-self-center m-0 light-grey" src="images/Desire.png" alt="Desire">
+                <figcaption class="figure-caption pe-0 pe-sm-3 pe-lg-1 pe-xl-0 fst-italic purple">
+                    <h3>Desire</h3>
+                    <p class="pe-sm-3 pe-xl-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros
+                        ligula, lacinia quis euismod in, dignissim at neque. Aliquam quis consectetur magna.</p>
+                </figcaption>
+            </figure>
+            <figure class="figure col-12 col-sm-6 col-xl d-flex flex-column p-0">
+                <img class="figure-img img-fluid align-self-center m-0 light-grey" src="images/Aspiration.png"
+                     alt="Aspiration">
+                <figcaption class="figure-caption pe-0 pe-sm-3 pe-lg-1 pe-xl-0 fst-italic purple">
+                    <h3>Aspiration</h3>
+                    <p class="pe-sm-3 pe-xl-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros
+                        ligula, lacinia quis euismod in, dignissim at neque. Aliquam quis consectetur magna.</p>
+                </figcaption>
+            </figure>
+            <figure class="figure col-12 col-sm-6 col-xl d-flex flex-column p-0">
+                <img class="figure-img img-fluid align-self-center m-0 light-grey" src="images/Design.png" alt="Design">
+                <figcaption class="figure-caption pe-0 pe-sm-3 pe-lg-1 pe-xl-0 fst-italic purple">
+                    <h3>Design</h3>
+                    <p class="pe-sm-3 pe-xl-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros
+                        ligula, lacinia quis euismod in, dignissim at neque. Aliquam quis consectetur magna.</p>
+                </figcaption>
+            </figure>
+            <figure class="figure col-12 col-sm-6 col-xl d-flex flex-column p-0">
+                <img class="figure-img img-fluid align-self-center m-0 light-grey" src="images/Lust.png" alt="Lust">
+                <figcaption class="figure-caption pe-0 pe-sm-3 pe-lg-1 pe-xl-0 fst-italic purple">
+                    <h3>Lust</h3>
+                    <p class="pe-sm-3 pe-xl-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros
+                        ligula, lacinia quis euismod in, dignissim at neque. Aliquam quis consectetur magna.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <!--Buttons-->
+    <div class="row w-50 justify-content-center align-self-center gap-3 px-lg-5">
+        <a class="col btn see-btn rounded-5 mx-lg-1 fst-italic text-white" href="#">See our work</a>
+        <a class="col btn meet-btn rounded-5 mx-lg-1 fst-italic text-white" href="#footer-placeholder">meet the team</a>
+    </div>
+</section>
+
+<section class="py-5 bg-white" id="Area3">
+    <div class="container d-flex flex-column w-75">
+        <h4 class="w-100 mx-2 mx-lg-5 mb-3">What makes us so awesome</h4>
+        <div class="row mx-2 mx-lg-5">
+            <div class="container col-12 col-sm-4 d-flex flex-column justify-content-start justify-content-sm-between align-items-start p-0">
+                <p class="mb-1 mb-sm-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros ligula,
+                    lacinia quis euismod in, dignissim at neque. Aliquam quis consectetur magna.</p>
+                <button class="btn-sm view_more-btn rounded-1 mb-4 mb-sm-0 fst-italic fw-bold bg-purple text-white"
+                        type="button">
+                    View More
+                </button>
+            </div>
+            <div class="container col-12 col-sm-4 d-flex flex-column justify-content-start justify-content-sm-between align-items-start p-0">
+                <p class="mb-1 mb-sm-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros ligula,
+                    lacinia quis euismod in, dignissim at neque. Aliquam quis consectetur magna.</p>
+                <button class="btn-sm view_more-btn rounded-1 mb-4 mb-sm-0 fst-italic fw-bold bg-purple text-white"
+                        type="button">
+                    View More
+                </button>
+            </div>
+            <div class="container col-12 col-sm-4 d-flex flex-column justify-content-start justify-content-sm-between align-items-start p-0">
+                <p class="mb-1 mb-sm-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eros ligula,
+                    lacinia quis euismod in, dignissim at neque. Aliquam quis consectetur magna.</p>
+                <button class="btn-sm view_more-btn rounded-1 mb-4 mb-sm-0 fst-italic fw-bold bg-purple text-white"
+                        type="button">
+                    View More
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script async>
+    $("#footer-placeholder").load("../footer.html")
+</script>
+
+<!--Bootstrap javascript-->
+<script src="../Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
